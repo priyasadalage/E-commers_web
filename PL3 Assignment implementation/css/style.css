@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar
+{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    color:aqua;
+    font-size: 50px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    position: relative;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.logo::after{
+    content:'';
+    height:3px;
+    width:100%;
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    color:white;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.m1
+{
+    padding-top: 20%;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.10)30%,rgba(0,0,0,0.10)30%), url("https://cdn.dribbble.com/users/4147366/screenshots/11191354/delivery-online21_4x.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.form{
+    width: 250px;
+    height: 330px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 25px;
+    border-radius: 10px;
+}
+
+.form h1{
+    width: 220px;
+    text-align: center;
+    padding-left: 11px;
+    font-size: 35px;
+    color:pink;
+    margin-bottom: 20px;
+}
+
+.form p{
+    padding-bottom: -15px;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.form input[type="submit"]
+{
+    width: 60%;
+    margin-left: 50px;
+    border: none;
+    height: 40px;
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.form input[type="submit"]:hover{
+    cursor: pointer;
+    background:pink;
+    color: #fff;
+    font-weight: bold;
+}
